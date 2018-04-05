@@ -58,10 +58,9 @@ public class Main {
         }
         LogTemplateGenerator.printTemplates();
 
-        /* RegexGenerater rg = new RegexGenerater();
+        RegexGenerater rg = new RegexGenerater();
         rg.processTemplateFile(logTemplateFile);
         rg.printRegexes();
-        */
 
         LogMatcher lm = new LogMatcher();
         lm.startMaching();

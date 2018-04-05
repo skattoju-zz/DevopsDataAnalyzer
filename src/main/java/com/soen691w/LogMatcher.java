@@ -90,7 +90,7 @@ public class LogMatcher {
 
 
     private void createFile(int i){
-        Path file = Paths.get("D:\\P\\logsClassified\\Template_" + i + ".txt");
+        Path file = Paths.get("logsClassified/Template_" + i + ".txt");
         try {
             if (Files.exists(file)) {
                 Files.delete(file);
