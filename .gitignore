@@ -1,3 +1,9 @@
+# things starting with .
+.*
+
+# build output
+out/
+
 # Compiled class file
 *.class
 

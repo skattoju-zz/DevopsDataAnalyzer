@@ -1,0 +1,1370 @@
+Task: ~~ - exited :
+Counter name MAP_INPUT_BYTES is deprecated. ~~Use FileInputFormatCounters as group name and ~~ BYTES_READ as counter name instead
+Disk Segment added to List. Size is
+Start time 0 for task attempt
+ HsConfPage 
+TEST:2. Check:2 Expected: ~~, Got:
+Scan not needed of
+AM not assigned to Job. Waiting to get the AM ...
+Directory ~~ has ~~ entries
+Reducer amount =
+header: ~~, len: ~~, decomp len:
+Number of hosts :
+Compressed input; cannot compute number of records in the split
+Unable to delete unexpected local file/dir ~~: insufficient permissions?
+Adding job token for ~~ to jobTokenSecretManager
+Waiting for application to be successfully unregistered.
+Test Finished
+Ping from
+User refreshJobRetentionSettings~~~~ doesn't have permission~~ to call '~~'
+Running with numThreads:
+Job completed, stopping interrupter
+Added Memory Segment to List. List Size is
+Shuffle failure
+JobID : ~~ not started RUNNING yet
+TaskInfo is null for TaskAttemptUnsuccessfulCompletionEvent~~ taskId:
+The same path is included more than once ~~with different links or wildcards: ~~ [~~, ~~]
+Loading token from
+Error parsing conf file:
+The thread pool initial size is
+Host matched to the request list
+In flush timer task
+task-diagnostic-info for task ~~ :
+MRAppMaster received a signal. Signaling RMCommunicator and ~~JobHistoryEventHandler.
+Failure asking whether task can commit:
+Group ~~ is deprecated. Use ~~ instead
+TEST:3. Clearing Mark
+Reduce preemption successful
+Could delete
+MRAppMaster uberizing job ~~ in local container (\"uber-AM\") on node ~~:~~.
+Record too large for in-memory buffer:
+Ramping up
+FileCreateDaemon failed.
+Got interrupt while joining
+Created file at ~~ of size ~~ bytes using blocksize ~~ and replication amount ~~ in ~~ milliseconds
+Codec created
+Commit-pending state update from
+verifying request. enc_str=~~; hash=...
+fetcher#~~ about to shuffle output of map ~~ decomp: ~~ len: ~~ to
+Starting AccumulatingReducer on localhost~~
+ read 
+Cannot pick ~~ as the ClientProtocolProvider - returned null protocol
+Scanning intermediate dir
+Connecting to HistoryServer at:
+Options are:
+Job finished :
+this mapper will process file
+Received new Container :
+Caught expected Exception
+MAP Encountered BAD record
+Replication amount =
+JOBID = NULL in ~~ at
+failures on node
+Executing TEST:3 for Key:
+CONTAINER_REMOTE_LAUNCH contains a map task (~~), but should be finished with maps
+Assigning container ~~ to fast fail map
+TaskAttempt killed because it ran on unusable node ~~~~. AttemptId:
+Created map input files.
+Unable to run job due to error:
+removed attempt ~~ from the futures to keep track of
+Free memory = ~~ bytes. Creating 1 MB on the heap.
+In stop, writing event
+Replication factor:
+created control files for: ~~ files
+Corrupted block detected in \"~~\" at
+Error in handling event type ~~ to the ContainreAllocator
+using new api for output committer
+Error with reading
+Signaling process ~~ with ~~. Exit code
+Created a new mem block of
+Processing the event
+Configuring multithread runner to use ~~ threads
+Number of reduces:
+has added children in refresh
+could not create failure file.
+adding the following namenodes' delegation tokens:
+Error while trying to run jobs.
+Exception in getting events
+Running with option list ~~
+Size of the JobHistory event queue is
+conflicts with ~~ This will be an error in Hadoop 2.0
+Starting testControlledJob
+Job end notification attempts left
+Unable to create default file context [~~]localGlobber: bad tail~~
+The value  user.name~~
+Resuming the stopped trackers
+Error with truncating
+Not generating HistoryFinish event since start event not ~~generated for taskAttempt:
+Done recovering task
+confClasspath: ,\\s*~~
+Commit go/no-go request from
+Uberizing job ~~: ~~m+~~r tasks (~~ input bytes) will run sequentially on single node.
+Got interrupted while joining
+Unable to update token
+Application state is completed. FinalApplicationStatus=~~. Redirecting to job history server
+Sent abort command
+Test started
+Starting flush of map output
+Initializing cluster for Job Tracker=
+job failed with status:
+checkAccess job acls, jobOwner: ~~ jobacl: ~~ user:
+map ~~ done
+ uri= 
+Unable to write out JobSummaryInfo to [~~]
+splits[~~]=~~ count=
+task-diagnostic-info for task ~~ : ~~
+Total dir file limit =
+Added token for
+Total data : ~~ mb
+The API setMaxPhysicalMemoryForTask() is deprecated.~~ The value set is ignored. Refer to ~~ setMemoryForMapTask() and setMemoryForReduceTask() for details.
+Counter is
+JVM with ID: ~~ is invalid and will be killed.
+Running testIgnoreBlacklisting
+\n\n\nStarting uberized testFailingMapper().
+Connecting to MRHistoryServer at:
+Placing a new container request for task attempt
+bufstart = ~~; bufend = ~~; bufvoid =
+Jobs in running state: Test~~
+Unexpected TASK_ATTEMPT_ID = null for task
+IndexCache HIT: MapId ~~ found
+Failure sending status update:
+for url=~~ sent hash and received reply
+soft limit at
+Sending AUTHENTICATION_REQ, digest=~~, challenge=
+Failed to use ~~ due to error: ~~
+Connected to ApplicationMaster at:
+Command to launch container for ApplicationMaster is :
+The key
+Not attempting to recover. Recovery disabled. To enable ~~recovery, set
+The expected checksum exception was thrown.
+waiting for finish
+Child starting
+ added 
+Attempting to truncate file at ~~ to size
+Started MiniDFSCluster -- namenode on port
+Reduce slow start threshold reached. Scheduling reduces.
+task ~~ has ~~ task attempts
+Communication exception:
+Running testHeartbeatHandler
+Setting the FirsSegmentOffset to
+: Shuffling to disk since ~~ is greater than maxSingleShuffleLimit (~~)
+CachedHistoryStorage Init
+Result file =
+converted task ~~ to a timeline entity
+fileSize (MB) =
+DefaultSpeculator.addSpeculativeAttempt -- we are speculating
+Attempting to append to file at ~~ of size
+TEST:1. Marking -- ~~:
+Job end notification interrupted for jobID :
+blacklistDisablePercent is
+Waiting on truncate file recovery for
+Found replacement:
+JobHistoryEventHandler notified that forceJobCompletion is
+Request for unknown token
+Application state is
+Shuffle secret missing from task credentials.~~ Using job token secret as shuffle secret.
+Unable to determine FileDescriptor
+Merge of the ~~ files in-memory complete.~~ Local file is ~~ of size
+Reduce slow start threshold not met. ~~completedMapsForReduceSlowstart
+ Exception 
+Assigned based on rack match
+ queue: 
+Can not open history file:
+wrote ~~ entities (~~ kB) in ~~ ms
+Token kind is ~~ and the token's service name is
+Updated ~~ configuration settings from command line.
+Error with sleeping
+Copy failed from: ~~ to done location:
+Shared cache does not support directories~~ (see YARN-6097).~~ Will not upload ~~ to the shared cache.
+MergerManager: memoryLimit=~~, ~~maxSingleShuffleLimit=~~, ~~mergeThreshold=~~, ~~ioSortFactor=~~, ~~memToMemMergeOutputsThreshold=
+Map tasks to process:
+Analyzing results ... done.
+TEST:2 Done
+Task cleanup failed for attempt
+deleting ~~ and
+Running cleanup for the task
+Run 1st job which should be successful.
+Storing state DB schema version info
+Error while reading
+Ignoring exception during close for
+Failed to shuffle output of ~~ from
+Shuffle output from ~~ failed, retry it.
+Testing Percent Filter with frequency: 1000
+Creating splits at
+You are strongly encouraged to choose an integral split column.
+Cannot assign container ~~ for a map as either ~~ container memory less than required ~~ or no pending map tasks - maps.isEmpty=
+split=~~ count=
+for child:
+Merging ~~ intermediate segments out of a total of
+task executor complete.
+Trying to delete
+Total input files to process :
+Waiting for number of events processed to become ~~. It is now ~~. Timeout is
+Stopping a few trackers
+Job ~~ completed successfully
+Bytes per checksum:
+Failed to process fileInfo for job:
+----- DFSCIOTest ----- : ~~write~~read~~unknown~~           Date & time: ~~       Number of files: ~~Total MBytes processed: ~~     Throughput mb/sec: ~~Average IO rate mb/sec: ~~ Std IO rate deviation: ~~    Test exec time sec: ~~~~
+in test Shutdown
+we already have the job history file ~~: skipping
+Invalid map-output! Received output for
+Initializing Existing Jobs...
+start :
+ milliseconds~~ 
+Created attempt
+Exception while parsing job state. Defaulting to KILLED
+Max block location exceeded for split: ~~ splitsize: ~~ maxsize:
+IO exception in closing file system)
+Task Transitioned from ~~ to
+Finished spill
+Waiting for next attempt to start
+key:~~ value:
+Container complete event for unknown container
+sleeping for 5 minutes...
+Task attempt ~~ will be recovered as KILLED
+No file for jobConf with ~~ found in cache!
+wrote ~~ entities in ~~ ms
+Total    Maps = ~~  Reduces =
+Starting testJobControlWithFailJob
+TEST:1. Reset
+Failed to execute refreshJobRetentionSettings : Job History service is not started
+Running testCompletedTasksRecalculateSchedule
+Queue configuration is refreshed successfully.
+Attempting to read file at ~~ of size (full file~~~~)
+got expected:
+nrBytes (MB) =
+scanning file:
+Error when publishing entity [~~,~~], server side error code:
+Error trying to contact the shared cache manager,~~ disabling the SCMClient for the rest of this job submission
+Emitting job history data to the timeline service is enabled
+Executing TEST:0 for Key:
+kvbuffer is null. Skipping flush.
+Error with appending
+for uber task:
+Assigned to reduce
+Start time: test.nnbench.starttime~~
+Error reading bad file
+Updating token
+Exception while closing file
+Running testReportedAppProgress
+fetcher#~~ - MergeManager returned Status.WAIT ...
+Upper limit on the thread pool size is
+Deleting directory
+Notify RMCommunicator isAMLastRetry:
+Pipe child done
+line =
+User name is
+JVM with ID: ~~ given task:
+getMaxVirtualMemoryForTask() is deprecated. ~~Instead use getMemoryForMapTask() and getMemoryForReduceTask()
+Error putting entity ~~ to Timeline~~Server
+Skipping index ~~-
+ runWordCount 
+relative to working: ~~ -> .
+Removing from cache
+STARTING testHistoryParsing()
+Processing ~~ at ~~ # tasks = ~~
+Loaded state DB schema version info
+Could not find output size
+Replacing FAST_FAIL_MAP container
+Assigned from earlierFailedMaps
+addResourceRequest:~~ applicationId=~~ priority=~~ resourceName=~~ numContainers=~~ #asks=
+Running testPreemptReducers
+Unable to remove master key
+Error trying to clean up
+Failed to instantiate ClientProtocolProvider, please ~~check the /META-INF/services/org.apache.~~hadoop.mapreduce.protocol.ClientProtocolProvider ~~files on the classpath
+Could not obtain job info after ~~ attempt(s). Sleeping for ~~ seconds and retrying.
+SleepJob done
+Cannot delete history log file:
+Starting NNBenchReducer on localhost~~
+--- START: testLaunchTaskAttempt ---
+Handling uplink command
+Timeout expired in FAIL_WAIT waiting for tasks to get killed.~~ Going to fail job anyway
+Host ~~ is already blacklisted.
+Total # of splits generated by getSplits: ~~, TimeTaken:
+imprecise representation of floating-point values in Java, this
+Job init failed
+splitting: got =
+Test Inputs:
+TEST:3 Check:4 reset was successfule even after clearMark
+Failed to cleanup staging dir:
+Started MiniMRCluster
+Can't make a speculator -- check
+Using ~~ samples
+creating control file: JH log dir =
+Initiating in-memory merge with ~~ segments...
+Input size for job ~~ = ~~. Number of splits =
+Starting the benchmark for threaded spills
+Failed to delete test root dir and its content under
+Authentication succeeded
+Running job:
+TEST:1. Marking
+Not attempting to recover. The shuffle key is invalid for ~~recovery.
+ \nignoreInputKey: 
+Waiting to remove MOVE_FAILED state histories ~~(e.g. ~~) from JobListCache ~~because it is not in done yet. Total count is ~~.
+ Group 
+Recovered ~~ token master keys
+Number of splits set to:
+removed previousRange
+Starting NNBenchReducer !!!
+Configuring jobConf ~~ to use ~~ threads
+Operations are:
+Error cleaning up a HistoryFile that is out of date.
+Incorrect TASKID: =\"*|\"~~~~ expect
+Job commit from a prior MRAppMaster attempt is ~~potentially in progress. Preventing multiple commit executions~~
+Found UTF-8 BOM and skipped it
+out =
+counters max=
+Running sort with ~~ spills per map
+Queue ~~ not equal to
+Sleeping for ~~ms before retrying again. Got null now.
+Job ~~ running in uber mode :
+map ~~ reduce ~~
+Base directory =
+TEST:3, Check:1. HasNext returned false
+Task ~~ reporting done.
+got done
+Creating setup context, jobSubmitDir url is
+REDUCE key:~~  value:
+TEST:2. Check:1 Expected: ~~, Got:
+Seq Test exec time sec: ~~
+Encountered a NULL date in the split column. Splits may be poorly balanced.
+error trying to open previous history file. No history data ~~will be copied over.
+Recovered ~~ tokens
+Exception get thrown in job commit, retry (~~) time.
+Storing state version info
+closing connection
+Running testBlackListedNodesWithSchedulingToThatNode
+setsid is not available on this machine. So not using it.
+Will STOP/RESUME tasktrackers based on ~~Reduces' progress
+job is complete:
+ CounterMR 
+Log Directory is null, returning
+Replacing MAP container
+Starting mapper thread pool executor.
+Trying to set illegal startTime for task : ~~.Stack trace is :
+REDUCE Encountered BAD record
+parsing job history file
+writing to the timeline service failed
+Shuffle error :
+Ignoring killed event for successful reduce task attempt
+MapOutput URL for ~~ ->
+Progress of TaskAttempt ~~ is :
+files =
+Testing MD5 Filter with frequency: 1000
+Attempting to create file at ~~ of size ~~ using blocksize ~~ and replication amount
+Shuffle error
+: Starting merge with ~~ segments, while ignoring ~~ segments
+Storing token
+Unable to parse prior job history, aborting recovery
+ResourceRequest: resource = ~~, locality =
+Unable to parse arguments due to error:
+Job end notification succeeded for
+Error communicating with RM:
+Output Path is null in commitJob()
+STARTING testScanningOldDirs
+Cleaning up job:
+Unable to parse num reduces from job history file ~~ :
+Spilling map output
+Stopping JobHistory
+Cannot restart the mini cluster, start it first
+closeInMemoryMergedFile -> size: ~~, inMemoryMergedMapOutputs.size() ->
+Processing ~~ of type
+Running testForcePreemptReducers
+Bad conf file: top-level element not <queues>
+Error with renaming
+processing ~~...
+Read ~~ of ~~ with ~~ chunks being same as expected and ~~ chunks being different than expected in ~~ milliseconds
+Shuffle port returned by ContainerManager for ~~ :
+closeInMemoryFile -> map-output of size: ~~, inMemoryMapOutputs.size() -> ~~, commitMemory -> ~~, usedMemory ->
+Shuffle failed with too many fetch failures ~~and insufficient progress!
+Error in cleanup job, manually cleanup is needed.
+Can't create /testing/input~~
+Caught exception while deleting path
+ HsSingleCounterPage 
+Assigning ~~ with ~~ to
+Setting ~~ as the context classloader of thread uber-EventHandler~~
+TEST:1 Check:4. Iterator returned fewer values
+Failed to set setXIncludeAware(true) for parser
+Assigning container ~~ to reduce
+TEST:1. Check:1 Expected: ~~, Got:
+Copied from: ~~ to done location:
+ HsLogsPage 
+Running testNonAggressivelyPreemptReducers
+Setting job diagnostics to
+Grid queue =
+Perms after creating ~~, Expected:
+ attempt.getDiagnostics: 
+Could not create log file: [~~] + for job ~~[~~]
+Sleeping for 5 seconds after stop for~~ the server to exit cleanly..
+waiting for jobId...
+Starting testDefaultProfiler
+ID: ~~ WRITE TO DISK
+CleanupThread:Unable to delete path
+Executing TEST:1 for Key:
+Generating splits for a floating-point index column. Due to the
+Storing master key
+Failed to execute refreshLoadedJobCache: CachedHistoryStorage is not started
+Cannot find a range for NUMERIC or DECIMAL fields with one end NULL.
+ url=~~;encHash=~~;replyHash= 
+ KILLING 
+Failed to create symlink: %s <- %s
+Thread sleep is interrupted.
+JOBID is
+Task status: \"~~\" truncated to max limit (~~ characters)
+Connection retry failed with ~~ attempts in ~~ seconds
+Failure committing:
+IO exception in closing file system
+Not attempting to recover. Recovery is not supported by mapred.output.committer.class~~~~. Use an OutputCommitter that supports~~ recovery.
+Shutting down timer
+ summary: 
+args =
+freed by ~~ in ~~ms
+TaskAttempt Transitioned from ~~ to
+Checking access for the acl ~~ for user
+AllQueues : ~~; LeafQueues :
+getResources() for ~~:~~ ask=~~ release= ~~ newContainers=~~ finishedContainers=~~ resourcelimit=~~ knownNMs=
+Executing with tokens:
+Fail task attempt ~~ received from ~~ at ~~
+Merged ~~ segments, ~~ bytes to disk to satisfy ~~reduce memory limit
+ApplicationMaster is out of sync with ResourceManager,~~ hence resync and send outstanding requests.
+Assigned based on * match
+had no output to recover.
+Could not parse the old history file. ~~Will not have old AMinfos
+Error JobHistoryEventHandler in handleEvent:
+\n\n\nStarting testJobSucceed().
+Interrupted deletion of
+Failed to connect to host: ~~after ~~ milliseconds.
+Truncate file ~~ to ~~ in ~~ milliseconds
+Writing job conf to
+Picked ~~ as the ClientProtocolProvider
+Reserve(int, InputStream) not supported by BackupRamManager
+Error deleting path ~~:
+Moved tmp to done: ~~ to
+Instantiated HistoryClientService at
+ HsTasksPage 
+cleanup failed for container ~~ : ~~
+totalTime   =
+Using state database at ~~ for recovery
+Creating symlink: %s <- %s
+RMCommunicator notified that isSignalled is:
+ nodeBlacklistingEnabled: 
+STARTING testDiagnosticsForKilledJob
+current name ~~ not equal to
+TEST:3. Marking -- ~~:
+Unexpected TASK_TYPE = ~~ for attempt
+Error writing History Event:
+Removing token
+ JHLAMapper.parseLogFile 
+Renewed token at: ~~, NextExpiryTime:
+TEST:2. Reset
+IV read from Stream [~~]
+Number of maps:
+parsed the job history file and the configuration file for job
+No job jar file set.  User classes may not be found. ~~See Job or Job#setJar(String).
+Running testUpdateAskOnRampDownAllReduces
+averageAttemptTime =
+shuffleError: ~~from task:
+fetcher#~~ failed to read map header~~ decomp: ~~,
+Calling stop for all the services
+TEST:1 Done
+Skip cleanup the _temporary folders under job's output ~~directory in commitJob.
+Notify JHEH isAMLastRetry:
+Delete startJobCommitFile in case commit is not finished as ~~successful or failed.
+Ramping down
+inserting launch event
+Error closing writer for JobID:
+: Stalling shuffle since usedMemory (~~) is greater than memoryLimit (~~).~~ CommitMemory is (~~)
+Unable to store master key
+setsid exited with exit code
+Error trying to scan for all FileInfos
+Aborting job with runstate :
+No ondisk files to merge...
+Adding ShuffleProvider Service: ~~ to serviceData
+Task ~~ reportedNextRecordRange
+ \n 
+Invalid map id
+Found ~~ files
+Deleting JobSummary file: [~~]
+listening on port
+Operation amount =
+Size of containertokens_dob is
+Max number of files       =
+ HsJobPage 
+Shuffle secret key missing from job credentials.~~ Using job token secret as shuffle secret.
+No file for jobconf with ~~ found in cache!
+Job end notification trying
+Dropping a segment
+Skipping unexpected file in history server token state:
+The property ~~ is not an integer value.  Please set it to a positive~~ integer value.
+Encrypted shuffle is enabled.
+TaskAttempt ~~ found in unexpected state ~~, recovering as KILLED
+Created file: /backup_~~_~~.out~~
+In HistoryEventHandler
+ Path~~: 
+Exception while unregistering
+Got allocated container on a blacklisted ~~ host ~~. Releasing container
+\n\n\nStarting testFailingMapper().
+Reset - First segment offset is ~~ Segment List Size is
+Map ID~~ not found in queue!!
+Ignoring client socket close
+Waiting for FileSystem at ~~to be out of safe mode
+History Cleaner complete
+got an error while submitting
+Waiting for job to complete...
+default FileSystem:
+HsLogsPage with params for single log and data limits
+Checking state of job
+Renamed ~~ to
+With compression = ~~: ~~compressed length =
+Writing ~~ bytes to part-0~~~~ with ~~minKeySize: ~~ keySizeRange: ~~ minValueSize: ~~ valueSizeRange:
+MRAppJar ~~ not found. Not running test.
+Aborting already-finished MapOutput for
+Unable to store token
+At time: ~~, token should be invalid
+Token is
+cleanUpPartialOutputForTask: removing everything belonging to ~~ in:
+Could not commit job
+has been set to an invalid value; ~~ replacing with
+Failed to shuffle for fetcher#
+Adding in history for
+Failed to write the job configuration file
+Collected stats for job:
+handling event ~~ with type
+Job History Server is not configured.
+Created a new BackupStore with a memory of
+TEST_ROOT_DIR is
+Job setup failed
+Invalid event ~~ on Task
+Exception occurred while shutting down HSQLDB :
+Further groups got skipped.
+Called getAllJobs(AppId):
+Creating job classloader
+Attempt num: ~~ is last retry: ~~ because a commit was started.
+We launched ~~ speculations.  Sleeping ~~ milliseconds.
+Loading history file: [~~]
+Stale path
+FileOutputCommitter skip cleanup _temporary folders under ~~output directory:~~, ignore cleanup failures:
+Request for ~~ returns=
+ mkdir: 
+Finished dispatching all Mappper.map calls, job
+ HsTaskPage 
+splitting: requesting =
+Hack env on Windows doesn't work:
+Failure cleaning up:
+Error trying to convert URL received from shared cache to~~ a URI:
+Set historyUrl to
+Committing job
+Output Path is null in cleanupJob()
+Base dir: test.nnbench.basedir~~
+ mapperOutput 
+Interrupting Event Handling thread
+Setting default time zone: GMT
+fetcher#~~ - MergeManager returned status WAIT ...
+Trying to set finish time for task ~~ when no start time is set, stackTrace is :
+mkdirs failed. Ignoring.
+copyMapOutput failed for tasks
+TEST:1. Check:5 Expected: ~~, Got:
+setMaxVirtualMemoryForTask() is deprecated.~~Instead use setMemoryForMapTask() and setMemoryForReduceTask()
+Finished ~~ threads out of
+Could not rename ~~ to
+ headroom= 
+conflict with ~~ at position
+TEST:3. After reset
+KeepAliveParam : keepAlive~~~~ :
+Unable to parse num maps from job history file ~~ :
+ SEED: 
+Waiting for ~~ tasks
+getStagingAreaDir: dir=
+created jobQInfo
+Skipping unexpected file in history server token bucket:
+Requesting 1 Containers _1 on H1
+assgined to ~~ with priority
+Task exceeded the limits: ~~
+ split= 
+kvstart = ~~; length =
+Failed to connect to ~~ with ~~ map outputs
+Missing header hash for
+Split count increment     =
+Skipping cleaning up the staging dir. ~~assuming AM will be retried.
+Job Transitioned from ~~ to
+Attempting to recover.
+ CounterHS 
+is not a known counter.
+creating control file: ~~ bytes, ~~ files
+ created: 
+creating control file: ~~ numLines, ~~ sortOrder
+ reducerOutput 
+Running testMapReduceScheduling
+Recovering task for upgrading scenario, moving files from ~~ to
+Event Writer setup for JobId: ~~, File:
+Failed while getting the configured log directories
+The job-jar file on the remote FS is
+RandomWriter job done
+Job end notification to ~~ failed with code: ~~ and message \"~~\"
+jobTotalTime =
+Created file file_~~~~ with length
+The last job returned by the querying JobTracker is complete :~~ .Exiting the test
+Result of canCommit for ~~:
+TEST:3. After clear mark
+missing either the job history file or the ~~configuration file. Skipping.
+FINISHED testCountersForFailedTask
+Got allocated containers
+Cannot delete history log dir:
+Start JHLA test ============
+ Running 
+Read completed tasks from history
+Assigned container ~~ to
+Timeline entities are successfully put in event
+Not decrementing resource as ~~ is not present in request table
+ CLASSPATH: 
+Cancelled delegation token at:
+currentIndex ~~
+Exception running child :
+AFTER decResourceRequest:~~ applicationId=~~ priority=~~ resourceName=~~ numContainers=~~ #asks=
+Exception in closing
+Parsing job history file with partial data encoded into name:
+Copying ~~ to
+ DELETED 
+Dummy function~~Dummy function cause~~
+Loading master key from
+IndexCache MISS: MapId ~~ not found
+Ignoring -D option
+Creating data by SequenceFileAsBinaryOutputFormat
+starting downlink
+will process ~~ jobs
+TEST:2. Marking -- ~~:
+Can't handle this event at current state for
+Not creating job classloader since APP_CLASSPATH is not set.
+Using deprecated num.key.fields.for.partition. ~~Use mapreduce.partition.keypartitioner.options instead
+Running testAMRMTokenUpdate
+Set BigDecimal splitSize to MIN_INCREMENT
+Looking for Job
+Made directory
+skipSize = test.io.skip.size~~
+HsLogsPage with data
+Bytes to write: test.nnbench.bytestowrite~~
+History url is
+File Output Committer Algorithm version is
+compile.c++ is not defined, so skipping TestPipes
+Job end notification couldn't parse configured proxy's port :~~~~. Not going to use a proxy
+Shuffle failed : local error on this node
+already given a go for committing the task output, so killing
+Max job attempts set to 1 since encrypted intermediate~~data spill is enabled
+nextRange ~~   startIndex:~~  endIndex:
+-jobconf option is deprecated, please use -D instead.
+created control file: input_~~.txt~~
+The job-conf file on the remote FS is
+Recalculating schedule, headroom=
+Message ~~ received before authentication is ~~complete. Ignoring
+PendingReds:~~ ScheduledMaps:~~ ScheduledReds:~~ AssignedMaps:~~ AssignedReds:~~ CompletedMaps:~~ CompletedReds:~~ ContAlloc:~~ ContRel:~~ HostLocal:~~ RackLocal:
+Adding #~~ tokens and #~~ secret keys for NM use for launching container
+Running testConcurrentTaskLimits
+SUBMITTING ApplicationSubmissionContext app:~~ to queue:~~ with reservationId:
+Creating intermediate history logDir: [~~] + based on conf. Should ideally be created by the JobHistoryServer:
+ seed: 
+FINISHED testScanningOldDirs
+seed =
+job ~~ has ~~ tasks
+Exception recorded in op: Rename, ~~file: \"_~~~~\"
+FSError: ~~from task:
+Background thread returning, interrupted
+Job end notification to ~~ failed
+Using query:
+Setting ContainerLauncher pool size to ~~ as number-of-nodes to talk to is
+Combined ~~ into/with
+Starting task:
+Number of bytes processed =
+Killing a few tasks
+Failed to createOutputCommitter
+Cancelling commit
+Error starting JobHistoryServer
+Keeping ~~ segments, ~~ bytes in memory for ~~intermediate, on-disk merge
+RM Heartbeat (To process the re-scheduled containers for H3)
+JobHistoryFile is:
+Recovering task ~~ from prior app attempt, status was
+Added attempt req to rack
+Putting shuffle token in serviceData
+Queue ~~ is not present
+Default file system [~~]
+data for the wrong reduce map: ~~ len: ~~ decomp len: ~~ for reduce
+Java Classpath: ~~java.class.path
+--- START: testRecoveryAllFailAttempts ---
+Incorrect TASK_TYPE: ~~ expect ~~ for task
+exists! deleting...
+number of splits:
+Reader created
+Further records got skipped.
+DONE WITH THE TESTS TO DO WITH LOST TASKTRACKERS
+conflict with ~~ in split ~~ at position
+IO rate =
+RECV: ~~\n  mapId: map~~~~\n  reduceId: reduce~~~~\n  jobId: job~~~~\n  keepAlive:
+is mis-formatted, returning empty shared cache upload policies.~~ Error on [~~]
+Finished merging ~~ map output files on disk of total-size ~~.~~ Local output file is ~~ of size
+Killed task : Job Test~~JOB ~~ failed to run~~
+The API getMaxPhysicalMemoryForTask() is deprecated.~~ Refer to the APIs getMemoryForMapTask() and~~ getMemoryForReduceTask() for details.
+JobHistoryFileParser created with
+Mkdirs failed to create
+left over operations found (due to inability to support partial operations)
+Failed to render tasks page with task type : ~~ for job id :
+Running testExcludeSchedReducesFromHeadroom
+ HsAttemptsPage 
+HS Admin: ~~ invoked by user refreshJobRetentionSettings~~
+TaskInfo loaded
+Duplicate: deleting
+A MiniMRYarnCluster get start.
+Done acknowledgment from
+Normalized volume: ~~ ->
+Renaming map output file for task attempt ~~ from original location ~~ to destination
+POOL SIZE 1: ~~ POOL SIZE 2: ~~ ACTIVE COUNT:
+Stopping History Cleaner/Move To Done
+Exception message:
+\n\n\nStarting testSleepJob: useRemoteJar=
+Couldn't get current user
+ launchContext 
+Cleaning up test files
+STARTING testHistoryParsingForFailedAttempts
+Error running local (uberized) 'child' :
+TEST:3 Done.
+Failed to contact AM/History for job ~~ retrying..
+Generated ~~ splits.
+Waiting for authentication response
+Not creating intermediate history logDir: [~~] based on conf: ~~. Either set to true or pre-create this directory with~~ appropriate permissions~~
+application did not reach terminal state within 60 seconds
+Could not find serial portion from path: ~~. Continuing with next
+Created MyAppMaster
+Bad configuration no queues defined
+FINISHED testDeleteFileInfo
+counter groups max=
+EventType: ~~ cannot be recognized~~ and handled by timeline service.
+keyspecs : -nr~~
+Cannot create ~~ in ~~. Ignored.
+in =
+EventQueue take interrupted. Returning
+Connecting to
+Could not find timestamp portion from path: ~~. Continuing with next
+IV written to Stream [~~]
+Very low remaining capacity in the event-queue ~~of RMContainerAllocator:
+Could not get Job info from RM for job ~~. Redirecting to job history server.
+FINISHED testJobHistoryMethods
+Unable to create default file context [~~]
+Running sort with 1 spill per map
+MiniMRYARN HistoryServer web address:
+Explicitly setting permissions to : ~~,
+Incorrect TASKID: =\"*|\"~~=\"*|\"~~~~ expect
+Max bytes per file        =
+TEST:3. Before Reset
+Waiting for Event Handling thread to complete
+Cannot constuct TACEStatus from TaskAtemptState: [~~] for taskAttemptId: [~~]. Defaulting to KILLED
+Sort job done
+Graceful stop failed. Exiting..
+Accepted ~~ records
+ ~~ 
+Unreserving: ~~. Available:
+Received completed container
+Error with mkdir
+KnownNode Count at 0. Not computing ignoreBlacklisting
+\n\n\nStarting testSleepJobWithSecurityOn().
+Task attempt_200907082313_0424_m_000000_0~~~~ reporting fatal error:
+Awaiting all running Mappper.map calls to finish, job
+may result in an incomplete import.
+File is not splittable so no parallelization ~~is possible:
+getBlacklistedTrackers - Not implemented yet
+Loaded state version info
+RM Heartbeat (to send the container requests)
+Could not connect to History server.
+Adding ~~ to job list cache.
+Ignoring unexpected event
+******Number of records:
+TEST:1 Check:2. Iterator returned lesser values
+has been set to an invalid value; ~~replacing with
+FINISHED testHistoryParsingForFailedAttempts
+ClientServiceDelegate invoke call interrupted
+Using ShuffleConsumerPlugin:
+ APP_CLASSPATH= 
+we already have the job conf file ~~: skipping
+Checking for glob:
+Loaded ~~ master keys and ~~ tokens from
+Initial progress threshold: ~~. Threshold Multiplier: ~~. Number of iterations:
+Expected - illegal argument is passed.
+Missing successful attempt for task ~~, recovering as RUNNING
+Last retry, killing
+Could not find ~~ token in query: ~~; splits may not partition data.
+Could not get LocalFileSystem BYTES_WRITTEN counter
+RMCommunicator notified that shouldUnregistered is:
+Exception while publishing configs on JOB_SUBMITTED Event ~~ for the job :
+Generating splits for a textual index column.
+ moveToDone: 
+ Opened 
+Send configurations that match regex expression: ~~ , total number of configs: ~~, total size : ~~ bytes.
+Output Path is null in setupJob()
+Found ~~ directories to load
+OutputCommitter is mapred.output.committer.class~~
+We got asked to run a debug speculation scan.
+Error cleaning up job:
+ uri2= 
+Assigning container ~~ with priority ~~ to NM
+Time zone GMT~~~~ could not be set on Oracle database.
+MiniMRYARN ResourceManager web address:
+Output: key:~~  value:
+Job end notification using proxy type \"~~\" hostname \":~~~~\" and port \"~~\"
+h1 Heartbeat (To actually schedule the containers)
+Created MRAppMaster for application
+Finished Maps = ~~  Reduces =
+\n\n\nStarting testJobClassloader()~~ useCustomClasses=
+Task attempt_200907082313_0424_m_000000_0~~~~ reporting shuffle error:
+compressionClass =
+Ignore blacklisting set to false. Known: ~~, Blacklisted: ~~, ~~%
+has ~~ initial operations out of ~~ for its ratio
+Created part-0~~~~ of size: ~~MB in ~~secs
+Number of children for queue ~~ in newState is ~~ which is not equal to ~~ in the current state.
+Default file system is set solely ~~by core-default.xml therefore -  ignoring
+Waiting to remove IN_INTERMEDIATE state histories ~~(e.g. ~~) from JobListCache ~~because it is not in done yet. Total count is ~~.
+Cannot create dirs for history log file:
+Will kill tasks based on Maps' progress
+HistoryCleanerService/move to done shutdown may not have ~~succeeded, Forcing a shutdown
+relative to working: ~~ ->
+--- START: testKillAttemptForSuccessfulTask ---
+starting application
+History Cleaner started
+MergeQ: adding:
+Exception recorded in op: OpenRead, ~~file: \"_~~~~\"
+Writing event
+Exception while ~~:
+finalMerge called with ~~ in-memory map-outputs and ~~ on-disk map-outputs
+Waiting in barrier for: ~~ ms
+Disk file: ~~ Length is
+Directory: [~~] already exists.
+Interrupted Exception while stopping
+Merging ~~ files, ~~ bytes from disk
+Submitting tokens for job:
+ split[~~]= 
+: Proceeding with shuffle since usedMemory (~~) is lesser than memoryLimit (~~).~~CommitMemory is (~~)
+Cannot test HdfsClientConfigKeys.DFS_NAMENODE_RPC_PORT_DEFAULT (=~~)
+Submitting job...
+Reporting on job:
+Job end notification failed to notify :
+Shutting down timer for
+Number of reduces for job ~~ =
+No summary file for job:
+Generating random input for the benchmark
+Task succeeded with attempt
+The url to track the job:
+ skipPath: 
+SQLException closing statement:
+Job ~~ failed with state ~~ due to:
+Failure in ~~ with exception
+Data per map: ~~ mb
+Job ~~ is running, but the host is unknown.~~ Verify user has VIEW_JOB access.
+Failing container _1 on H1 (should blacklist the node)
+Merging data from ~~ to
+Time taken to get FileStatuses:
+Output Path is null in abortTask()
+converted job ~~ to a timeline entity
+ PathUsed: 
+TEST:0. Reset
+output :
+Service address for token is
+Got ~~ map completion events from
+Job jar is not present. ~~Not adding any jar to the list of resources.
+ mapResourceRequest: 
+Number of files increment =
+MAP key:~~  value:0~~
+Exception recorded in op: Create/Write/Close, ~~file: \"_~~~~\"
+Job end notification started for jobID :
+--- START: testScheduleTask ---
+Error during initApp
+Max local threads:
+Size of event-queue in RMContainerAllocator is
+History file is at
+Could not abort job
+Ignore blacklisting set to true. Known: ~~, Blacklisted: ~~, ~~%
+Output directory =
+Finished parsing job: ~~ line count =
+Emitting job history data to the timeline server is not ~~enabled
+(EQUATOR) ~~ kvi ~~(~~)
+Seed =
+Run 2nd job which should be failed.
+Killing taskAttempt:~~ because it is running on unusable node:
+IV read from [~~]
+Timeline service is not enabled
+Finishing task:
+Error while scanning intermediate done dir
+Total file limit =
+STARTING testHandle
+Total time taken : ~~ millisec
+created control file: JH log dir =
+Accept record
+Getting list of all Jobs.
+Read ~~ bytes from map-output for
+Not generating HistoryFinish event since start event not~~ generated for task:
+Task ~~ is allowed to commit now
+Failed to contact AM/History for job ~~  Will retry..
+Interrupted while waiting for job completion
+Previous history file is at
+Time zone has been set to GMT~~
+TEST:0. Check:1 Expected: ~~, Got:
+Loading history server state from
+bufferSize =
+Stopped JobHistoryEventHandler. super.stop()
+Could not connect to ~~. Waiting for getting the latest AM address...
+(~~ more collector(s) to try)~~
+converted them into timeline entities for job
+Error while trying to move a job to done
+Setting connection close header...
+EventFetcher is interrupted.. Returning
+Unable to cleanup job due to error:
+SortValidator job done
+HsAttemptsPage with data
+Timeline service is enabled; version:
+Should exit on first error =
+Configuring ~~ flag in ~~ is not valid. ~~This tag is ignored. Configure ~~ in mapred-site.xml. See the ~~ documentation of ~~, which is used for enabling job level authorization and ~~ queue level authorization.
+Container allocated at unwanted priority: ~~. Returning to RM...
+Will STOP/RESUME tasktrackers based on Maps'~~ progress
+CONTAINER_REMOTE_LAUNCH contains a reduce task (~~), but not yet finished with maps
+Timeout for copying MapOutput with retry on host ~~after ~~ milliseconds.
+parsed the job history file and the configuration file ~~for job
+Unable to parse finish time from job history file ~~ :
+Unable to dump options due to error:
+Error when checking for application status
+Stopping JobHistoryEventHandler. ~~Size of the outstanding queue size is
+Error reading/writing job~~ conf file for job:
+Fetcher request verfied. enc_str=~~;reply=
+Could not map allocated container to a valid request.~~ Releasing allocated container
+Diagnostics report from ~~:
+Could not find the clause substitution token ~~ in the query: [~~]. Parallel splits may not work correctly.
+Jobs in success state: Test~~
+Error executing shell command
+No file for job-history with ~~ found in cache!
+Actual number of splits =
+JVM with ID: ~~ asking for task before AM launch registered. Given null task
+Creating state database at
+ done. 
+JobHistory Init
+Failed while checking for/creating  history staging path: [~~]
+Task: Loaded jobTokenFile from: file:///~~~~; num of sec keys  = ~~ Number of tokens
+getTaskLogFileDetail threw an exception
+ Killing 
+Get a negative backoff value from ShuffleHandler. Setting~~ it to the default value
+STARTING testHistoryParsingWithParseErrors()
+ bytes~~ 
+Marking tracker on host:
+nrFiles =
+Successfully did
+Failing container _1 on H1 (Node should be blacklisted and~~ ignore blacklisting enabled
+Test Operation:
+Scheduler's refresh-queues failed with the exception : ~~
+Event from RM: shutting down Application Master
+OutputCommitter set in config ~~mapred.output.committer.class
+Configuring job ~~ with ~~ as the submit dir
+Block Size:
+RM Heartbeat (To process the scheduled containers)
+Task:~~ is done.~~ And is in the process of committing
+STARTING testOutOfOrder
+Num completed Tasks:
+TaskAttempt~~ had not completed, recovering as KILLED
+creating control file: ~~ mega bytes, ~~ files
+expected-output : hello~~
+Closing Writer
+ Counters: 
+Error creating user intermediate history done directory: [ ~~]
+Job end notification couldn't parse
+Move no longer pending
+ .1.8~~ 
+Local filesystem ~~ is unsupported?? (should never happen)
+Unsupported protocol found when creating the proxy ~~connection to History server: ~~null~~
+given a go for committing the task output.
+MapCompletionEvents request from ~~. startIndex ~~ maxEvents
+ ---------------------------------------------------------- 
+Null event handling thread
+Logging exception:
+No Output found for
+Number of files: test.nnbench.numberoffiles~~
+Current number of shuffle connections (%d) is ~~greater than or equal to the max allowed shuffle connections (%d)
+Deleting staging directory ~~
+MRAppMaster launching normal, non-uberized, multi-container ~~job ~~.
+STARTING testJobHistoryMethods
+converted task attempt ~~ to a timeline entity
+The max number of bytes for a single in-memory shuffle cannot~~ be larger than Integer.MAX_VALUE. Setting it to Integer.MAX_VALUE
+Could not contact RM after ~~ milliseconds.
+kvstart = ~~(~~); kvend = ~~(~~); length = ~~/
+Running for Num Files=~~, split count=
+Hadoop command-line option parsing not performed. ~~Implement the Tool interface and execute your application ~~with ToolRunner to remedy this.
+JVM with ID : ~~ asked for a task
+Failed to delete symlink created by the local job runner:
+Merging ~~ segments, ~~ bytes from memory into reduce
+input : 123123123123123hi\thello\thow~~
+MiniMRYARN HistoryServer address:
+--- START: testKillScheduledTaskAttempt ---
+AttemptInfo is null for TaskAttemptUnsuccessfulCompletionEvent~~ taskAttemptId:
+Merging ~~ sorted segments
+Failure sending commit pending:
+If your database sorts in a case-insensitive order, ~~this may result in a partial import or duplicate records.
+Trying ClientProtocolProvider :
+Attempting to recursively delete
+Output Path is null in commitTask()
+TEST:2 reset
+Error while trying to delete history files~~ that could not be moved to done.
+FSError from child
+Using ResourceCalculatorProcessTree : JVM_PID~~
+Starting scan to move intermediate done files
+Map task progress is
+Number of maps per host :
+In the current state, queue ~~ has ~~ but the new state has none!
+ Recovering 
+testMRNewTimelineServiceEventHandling start.
+Unable to remove token
+Exception in committer.isCommitJobRepeatable():
+TEST:2 Marking
+Error starting MRAppMaster
+state-string for task ~~ :
+DEBUG: Terminated node allocation with : CompletedNodes: ~~, size left:
+Appended ~~ to file ~~ in ~~ milliseconds
+Unable to merge config & options!
+----- TestDFSIO ----- : ~~            Date & time: ~~        Number of files: ~~ Total MBytes processed: ~~      Throughput mb/sec: ~~ Average IO rate mb/sec: ~~  IO rate std deviation: ~~     Test exec time sec: ~~~~
+Reduce tasks to process:
+Reporting fetch failure for ~~ to MRAppMaster.
+TASKID = NULL for job
+Cleaning up the staging area
+DONE WITH THE TASK KILL/FAIL TESTS
+Running testBlackListedNodes
+Running testUpdateCollectorInfo
+Starting inMemoryMerger's merge since commitMemory=~~ > mergeThreshold=~~. Current usedMemory=
+Moving ~~ to
+Job Staging directory is null
+ID: ~~ WRITE TO MEM
+Dropping ~~ from the SerialNumberIndex. We will no ~~longer be able to see jobs that are in that serial index for
+Added ~~ to list of failed maps
+inserting cleanup event
+Exception on close
+Using Test Dir:
+Unable to parse submit time from job history file ~~ :
+Task timeout must be as least twice as long as the task ~~status report interval. Setting task timeout to
+Error running child :
+Error with closing append stream
+Error with creating
+Read file after open:
+Could not cleanup
+Localized %s as %s
+Exec time =
+ ??? 
+Looking for a token with service
+Running job ~~:~~ input=~~ output=
+Caught exception parsing history file after ~~ events
+testGzip() skipped:  native (C/C++) libs not loaded
+bufstart = ~~; bufvoid =
+Read from history task
+--- START:  testRecoveryAllAttemptsKilled ---
+Adding ~~ to job list cache with
+Aborting because of
+Requested node-label-expression is invalid: ~~
+unknown type:
+Returning, interrupted :
+Creating ~~ control files
+Failure signalling completion:
+splits=~~ count=
+oopsie...  this can never happen:
+TaskHeartbeatHandler thread interrupted
+Failed to execute refreshLoadedJobCache: JobHistory service is not started
+\n\n\nStarting testRandomWriter().
+Unable to recover task attempt
+Called getAllPartialJobs()
+Waiting for the job ~~ to start
+Invalid resource name: ~~ specified.~~
+GetMapEventsThread about to sleep for
+unchecked~~~~is not a known counter.
+couldn't parse Token Cache JSON file with user secret keys
+Jobs in waiting state: Test~~
+Incorrect JOBID: =\"*|\"~~=\"*|\"~~~~ expect
+ HADOOP_CLASSPATH: 
+Configuring \"~~\" in mapred-site.xml or ~~hadoop-site.xml is deprecated and will overshadow ~~. Remove this property and configure ~~queue hierarchy in
+InterruptedException while stopping
+No space available. Available: ~~ MinSize:
+Down to the last merge-pass, with ~~ segments left of total size: ~~ bytes
+root = /~~
+OnDiskMerger: We have  ~~ map outputs on disk. Triggering merge...
+Recovered output from task attempt
+ maxContainerCapability: 
+Output: key: ~~ value:
+Job end notification to ~~ succeeded
+Error closing read stream
+is null~~
+megaBytes =
+Hack env on Linux doesn't work:
+Connection rejected by the host ~~. Will retry later.
+will process no jobs
+job info: ~~ ~~ ~~
+Got delegation token at:
+Instead use ~~ and
+Network ACL closed to AM for job ~~. Not going to try to reach the AM.
+ Preempting 
+Applying ask limit of ~~ for priority:~~ and capability:
+Scanning intermediate dirs
+wrote entity
+out = UTF-8~~
+Sleep range = ~~ milliseconds
+Unable to merge config due to error:
+Starting testJobControlWithKillJob
+Creating db record reader for db product:
+Failed to manage OS cache for
+Calling handler for JobFinishedEvent
+Job failed as tasks failed. ~~failedMaps:~~ failedReduces:~~
+--- START: testKillRunningTaskAttempt ---
+Could not find method setSessionTimeZone in
+Exception running local (uberized) 'child' :
+Running testReportedAppProgressWithOnlyMaps
+ testReduceOutOfDiskSpace 
+Saved output of task '~~' to
+Failed to update failure diagnosis
+STARTING testDeleteFileInfo
+Deleting file
+Report results being placed to logging output and to file
+Task final state is not FAILED or KILLED:
+Allocated thread interrupted. Returning.
+Interrupted deletion of an invalid path: Path deletion ~~context is null.
+getMapOutputInfo: jobId=~~, mapId=~~,dataFile=~~, indexFile=
+Added attempt req to host
+Shuffle error in populating headers :
+Jobs in ready state: Test~~
+Running tesReducerRampdownDiagnostics
+ ~~= 
+Failed to process Event ~~ for the job :
+Going to preempt ~~ due to lack of space for maps
+Setting classloader ~~ on the configuration and as the thread context classloader
+SQLException closing resultset:
+ >>>> 
+Cannot assign container ~~ for a reduce as either ~~ container memory less than required ~~ or no pending reduce tasks.
+ JobCounterViewForKilledJob 
+Random seed =
+Running testAvoidAskMoreReducersWhenReducerPreemptionIsRequired
+ JOB_CREATE 
+Trying map output collector class:
+Exception occurred while closing connection :
+startJobs: parent=~~ child=
+Assigned container (~~) ~~ to task ~~ on node
+Not attempting to recover. Intermediate spill encryption~~ is enabled.
+Error while tyring to clean up
+Error while starting the Secret Manager threads
+Reserving: ~~ Requested:
+Jobs in failed state: Test~~
+(RESET) equator ~~ kv ~~(~~)~~ kvi ~~(~~)
+BEFORE decResourceRequest:~~ applicationId=~~ priority=~~ resourceName=~~ numContainers=~~ #asks=
+Usage of -Djava.library.path in ~~ can cause ~~programs to no longer function if hadoop native libraries ~~are used. These values should be set as part of the ~~LD_LIBRARY_PATH in the ~~ JVM env using ~~ config settings.
+Error with listing
+ ATTEMPT_START 
+Can't make a speculation runtime estimator
+Getting task report for ~~   ~~. Report-size will be
+ ===> 
+numAttempts =
+Error during stopApp
+Memory-to-Memory merge of the ~~ files in-memory complete.
+read ~~,
+MapId=~~ Reducer=~~Spill =~~(~~,~~, ~~)
+Error while trying to scan the directory
+expected sum: ~~, got
+Expected - connection should not be open
+Error closing create stream
+Will kill tasks based on Reduces' progress
+Unrecognized value '~~' for property ~~.  Valid values are ~~'json' or 'binary'.  Falling back to default value '~~'.
+STARTING testCountersForFailedTask
+Could not obtain compressor from CodecPool
+Busy loop counter:
+Thread started:
+Failed to cleanup staging dir
+--- START:  testRecoveryTaskSuccessAllAttemptsFail ---
+services started
+STARTING testContainerCleaned
+length :
+Scheduling move to done of
+ Launching 
+Fatal: ~~from task:
+Got dt for ~~;
+Map amount =
+Job finished cleanly, recording last MRAppMaster retry
+Content Length in shuffle :
+TaskAttempt: [~~] using containerId: [~~ on NM: [~~]
+localfetcher#~~ about to shuffle output of map ~~ decomp: ~~ len: ~~ to
+Failed to render attempts page with task type : ~~ for job id :
+Failure in
+Running testSimple
+% of cache is loaded.
+Blacklisted host
+ <<<< 
+Running testMapReduceAllocationWithNodeLabelExpression
+ Flushing 
+Sending event ~~ to
+Sent close command
+created control file for: ~~ bytes
+Too many fetch-failures for output of task attempt: ~~ ... raising fetch failure to map
+ERROR IN CONTACTING RM.
+% of the mappers will be scheduled using OPPORTUNISTIC containers
+--- START: testRecoverySuccessAttempt ---
+Writing report using contents of
+Exception while registering
+--- START: testKillScheduledTask ---
+Event handling interrupted
+Releasing unassigned container
+Error :
+Finish time ~~ is less than ~~Start time ~~ for task attempt
+Waiting for a map task to be launched
+Update the blacklist for ~~: blacklistAdditions=~~ blacklistRemovals=
+Creating ~~ file(s) in test.multifile~~
+Starting reduce thread pool executor.
+At root level only \" queue \" tags are allowed
+Exception cleaning up:
+Can not get FileContext
+Task: ~~ - failed due to FSError:
+Report results being placed to logging output
+Thread ~~ :
+baseDir =
+Adding ~~ to serial index
+Using ~~ for history server state storage
+Unable to report on job due to error:
+PID: ~~JVM_PID
+Cannot locate shuffle secret in credentials.~~ Using job token as shuffle secret.
+Could not delete
+Exception while canceling delayed flush timer. ~~Likely caused by a failed flush
+Cannot submit job to parent queue
+~~ ==
+All maps assigned. ~~Ramping up all remaining reduces:
+failure to clean up
+Notification error [~~]
+HsLogsPage with bad start/end params
+Existing job initialization finished. ~~% of cache is occupied.
+not found
+Max split count           =
+Executing TEST:2 for Key:
+Connecting to ApplicationMaster at:
+Processing split:
+Removing master key
+Awaiting thread termination!
+FINISHED testHistoryParsing()
+TEST:0. Marking
+Found jobId ~~ to have not been closed. Will close
+Waiting for number of events to become ~~. It is now
+Initiating Memory-to-Memory merge with ~~ segments of total-size:
+Reading a line from /dev/null
+Ignoring obsolete output of ~~ map-task: '~~'
+Error with deleting
+Shuffle error:
+ numReduceTasks: 
+Permissions on staging directory ~~ are ~~incorrect: ~~. Fixing permissions ~~to correct value
+Starting testJobControl
+FINISHED testHistoryParsingWithParseErrors()
+TEST:3. Marking
+invalid lengths in map output header: id: ~~ len: ~~, decomp len:
+Could not deallocate container for task attemptId
+Not able to initialize queue
+Shuffle failed : local error on this node:
+Testing Regex Filter with patter: \\A10*
+Map output collector class =
+loading user's secret keys from mapreduce.job.credentials.json~~
+Retrieved pathInfo for ~~ check for corresponding loaded messages to determine whether~~ it was loaded or cached
+totalRecords=~~ recordLength=
+creating; entries =
+Ignoring closed channel error
+--- START: testInit ---
+sending reportNextRecordRange
+Waiting for FileSystem at ~~to be available
+Added priority=
+h3 Heartbeat (To re-schedule the containers)
+ JobCounterView 
+Error reading
+add application failed with
+Loading job: ~~ from file:
+Number of spills :
+getProxy() call interruped
+Deleting data directory
+is not a recognized counter.
+Task ~~ has problem
+Error during getMeta
+Ignoring output of failed map TIP: '~~'
+ strLine.trim()= 
+Error cleaning up ~~:
+Task attempt ~~ is done from ~~TaskUmbilicalProtocol's point of view. However, it stays in ~~finishing state for too long~~
+Exception recorded in op: Delete, ~~file: \"_~~~~\"
+: ~~Got ~~ new map-outputs
+completedMapPercent ~~ totalResourceLimit:~~ finalMapResourceLimit:~~ finalReduceResourceLimit:~~ netScheduledMapResource:~~ netScheduledReduceResource:
+Got an error parsing job-history file~~, ignoring incomplete events.
+Unable to parse start time from job history file ~~ :
+Task ~~
+RM Heartbeat (To process the re-scheduled containers)
+TEST:1. Check:3 Expected: ~~, Got:
+ previousRange 
+Cleaning up job
+parsing job configuration file
+assigned ~~ of ~~ to ~~ to
+Trying to getSplits with splits =
+ started. 
+Map ID ~~ not found in cache
+Notification retry error [~~]
+Scheduling a redundant attempt for task
+Expecting ~~ records each with a length of ~~ bytes in the split with an effective size of ~~ bytes
+ APPLICATION_ATTEMPT_ID: 
+Connected to HistoryServer at:
+Container completed
+Webapps failed to start. Ignoring for now:
+Could not obtain decompressor from CodecPool
+Attempt num: ~~ is last retry: ~~ because the staging dir doesn't exist.
+TEST:0 Done
+SQLException committing split transaction:
+This must be run in only the distributed mode ~~(LocalJobRunner not supported).\n\tUsage: MRReliabilityTest ~~-libjars <path to hadoop-examples.jar> [-scratchdir <dir>]~~\n[-scratchdir] points to a scratch space on this host where temp~~ files for this test will be created. Defaults to current working~~ dir. \nPasswordless SSH must be set up between this host and the~~ nodes which the test is going to use.\n~~The test should be run on a free cluster with no parallel job submission~~ going on, as the test requires to restart TaskTrackers and kill tasks~~ any job submission while the tests are running can cause jobs/tests to fail
+Got getSplits =
+FINISHED testDiagnosticsForKilledJob
+Skipped line of size ~~ at pos
+Failed checking for the existance of history intermediate ~~done directory: [~~]
+Assigned based on host match
+--- START: testTaskProgress ---
+COULD NOT CLEANUP:
+Problem determining local host:
+JOB ~~ failed to run
+Verifying output
+JobCounterUpdateEvent ~~
+--- START: testKillSuccesfulTask ---
+Using mapred newApiCommitter.
+Data directory =
+MiniMRYARN ResourceManager address:
+canceling the task attempt
+ reduceResourceRequest: 
+Sleep in connection retry get interrupted.
+ HsAboutPage 
+Killing map task
+LocalFetcher ~~ going to fetch:
+Output Path is null in recoverTask()
+PathCache Eviction: ~~, Reason=
+Instantiated MRClientService at
+transitioned from state ~~ to ~~, event type is ~~ and nodeId=Not-assigned~~
+Error while scanning directory
+for child :
+setting block size of the input file to
+Dumping stacks
+maxTaskFailuresPerNode is
+Trying to recover task from
+Task '~~' done.
+AppMaster capability =
+Configuring queue ACLs in mapred-site.xml or ~~hadoop-site.xml is deprecated. Configure queue ACLs in
+Finding containerReq for allocated container:
+Sending signal to all members of process group ~~: ~~. Exit code
+Failed to resolve address: ~~. Continuing to use the same.
+Starting thread to interrupt main thread in 2 minutes
+Issuing kill to other attempt
+Running testMapNodeLocality
+Analyzing results ...
+Parent died.  Exiting
+Unable to setup slive
+Failed to contact the tasktracker
+IndexCache created with max memory =
+Could not set time zone for oracle connection
+options parsing failed:
+Unexpected event for REDUCE task
+Reading data by SequenceFileInputFormat
+Can't handle this event at current state
+Cannot create history log file:
+Task attempt_200907082313_0424_m_000000_0~~~~ reporting file system error:
+Loaded : ~~ via loader
+Sleeping for 5 seconds before stop for~~ the client socket to not get EOF immediately..
+Fetcher ~~ going to fetch from ~~ for:
+end :
+Could not make
+\n\n\nStarting testJobFail().
+Running testResource
+Context classloader of thread uber-EventHandler~~~~: uber-EventHandler~~
