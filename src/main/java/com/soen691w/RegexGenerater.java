@@ -45,7 +45,7 @@ public class RegexGenerater {
 
     public void printRegexes()
     {
-        Path file = Paths.get("D:\\P\\Regexes.txt");
+        Path file = Paths.get("Regexes.txt");
         try {
             if (Files.exists(file)) {
                 Files.delete(file);
