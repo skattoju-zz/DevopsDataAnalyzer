@@ -7,6 +7,7 @@ import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.expr.*;
 import com.github.javaparser.metamodel.CompilationUnitMetaModel;
 import com.github.javaparser.printer.JsonPrinter;
+import sun.management.ThreadInfoCompositeData;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -16,14 +17,16 @@ import java.util.*;
 
 public class LogTemplateGenerator {
 
-    public static HashSet<String> templates = new HashSet<>();
+    public static HashMap<String, HashSet<String>> templates = new HashMap<>();
     public Map<String, String> variableToTemplateMap = new HashMap<String, String >();
+    private String currentFile = "";
 
 
     public void processFile(String filePath)
     {
         try {
             Path pathToJavaFile = Paths.get(filePath);
+            this.currentFile= pathToJavaFile.getFileName().toString();
             CompilationUnit cu = JavaParser.parse(pathToJavaFile.toFile());
             parseVariableDeclarationExpression(cu);
             parseAssignmentExpressions(cu);
@@ -80,7 +83,6 @@ public class LogTemplateGenerator {
             }
             catch (Exception e) {
                 System.out.println("Error when parsing assignment expressions "+e.getMessage());
-                //e.printStackTrace();
             }
         }
     }
@@ -99,40 +101,21 @@ public class LogTemplateGenerator {
                         String logStr = "";
                         NodeList<Expression> args = expr.getArguments();
                         for (Expression expression: args) {
-                            /*if(expression instanceof  StringLiteralExpr)
-                            {
-                                logStr = logStr + ((StringLiteralExpr) expression).getValue();
-                            }
-                            if(expression instanceof NameExpr)
-                            {
-                                String var = expression.asNameExpr().getName().getIdentifier();
-                                if(variableToTemplateMap.containsKey(var)){
-                                    logStr = logStr + variableToTemplateMap.get(var);
-                                }
-                            }
-                            */
                             logStr = getLogTemplate(expression, logStr);
                             logStr = logStr.trim();
                             addToTemplates(logStr);
                         }
-                       /* for (int i = 0; i < args.size(); i++) {
-                            List<StringLiteralExpr> strEx = args.get(0).findAll(StringLiteralExpr.class);
-                            for (StringLiteralExpr s : strEx) {
-                                logStr = logStr + s.getValue() + "~~";
-                            }
-                        }
-                        */
                     }
                 }
             } catch (Exception e) {
                     System.out.println("Error when parsing method expression "+e.getMessage());
-                    //e.printStackTrace();
             }
         }
     }
 
     private void addToTemplates(String template){
         try{
+            // Clean the ~~ at starting of each line.
             if(template.length() >2)
             {
                 if(template.substring(0,2).equals("~~")){
@@ -140,16 +123,33 @@ public class LogTemplateGenerator {
                 }
             }
             template = template.trim();
+
+            /* Empty templates the basically variables printed without any accompanying text.
+             We keep it to keep the file names. We skip these when doing the matching.
             if(template.equals(""))
                 return;
 
+            We are also keeping very small templates now because we are filtering by files first when matching.
             if(template.length()<2)
                 return;
+            */
 
+            if(template.contains("{}"))
+                template = template.replace("{}", "~~");
+
+            // If its a  single word we need to add spaces otherwise the matching can be incorrect.
             if(!template.contains(" "))
                 template =  " " + template + " ";
 
-            templates.add(template);
+            if(templates.containsKey(this.currentFile))
+            {
+                templates.get(this.currentFile).add(template);
+            }
+            else{
+                HashSet<String> set  = new HashSet<>();
+                set.add(template);
+                templates.put(this.currentFile, set);
+            }
         }
         catch (Exception e)
         {
@@ -193,9 +193,9 @@ public class LogTemplateGenerator {
         }
     }
 
-
     public static void printTemplates()
     {
+        ArrayList<String> lines = new ArrayList<>();
         Path logfile = Paths.get(Main.logTemplateFile);
         try {
             if (Files.exists(logfile)) {
@@ -205,8 +205,19 @@ public class LogTemplateGenerator {
                 Files.createDirectories(logfile.getParent());
             }
             Files.createFile(logfile);
-            Files.write(logfile, templates, StandardOpenOption.APPEND);
-        }catch(Exception ie){
+
+            int i = 1;
+            for (String fileName: templates.keySet())
+            {
+                for (String template: templates.get(fileName)) {
+                    String templateLine = fileName + ";;;" + template;
+                    lines.add(templateLine);
+                }
+            }
+
+            Files.write(logfile, lines, StandardOpenOption.APPEND);
+        }
+        catch(Exception ie){
             ie.printStackTrace();
         }
     }

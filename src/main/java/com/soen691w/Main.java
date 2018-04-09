@@ -11,6 +11,9 @@ public class Main {
 
     public static final String logTemplateFile = "logTemplates.txt";
     public static final String logFile = "log.txt";
+    public static final String classifiedLogsFile = "classifiedLogs.txt";
+    public static final String templateEidMappingsFile = "templateEidMappings.txt";
+    public static final String statsFile = "stats.txt";
 
 
     public static void main(String[] args) {
@@ -47,23 +50,17 @@ public class Main {
 
         for (String javaFile : javaFiles) {
             try{
-                //FileParser.parseFile(javaFile);
                 LogTemplateGenerator ltg = new LogTemplateGenerator();
                 ltg.processFile(javaFile);
-                //ltg.printAST(javaFile);
             }catch(Exception e){
                 System.out.println("Error when analyzing files "+e.getMessage());
-                //e.printStackTrace();
             }
         }
         LogTemplateGenerator.printTemplates();
 
-        RegexGenerater rg = new RegexGenerater();
-        rg.processTemplateFile(logTemplateFile);
-        rg.printRegexes();
 
         LogMatcher lm = new LogMatcher();
-        lm.startMaching();
+        lm.classifyLogs();
     }
 
     /**
