@@ -90,10 +90,13 @@ public class LogMatcher {
                          boolean isFullMatch = true;
                          String[] parts = template.split("~~");
                          for(String part: parts){
-                            if(!line.contains(part)) {
-                                isFullMatch = false;
-                                break;
-                            }
+                             part = part.trim();
+                             if(part.equals(""))
+                                 continue;
+                             if(!line.contains(part)) {
+                                 isFullMatch = false;
+                                 break;
+                             }
                          }
                          if(isFullMatch){
                              matchedTemplate = template;

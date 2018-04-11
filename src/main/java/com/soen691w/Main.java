@@ -58,7 +58,6 @@ public class Main {
         }
         LogTemplateGenerator.printTemplates();
 
-
         LogMatcher lm = new LogMatcher();
         lm.classifyLogs();
     }

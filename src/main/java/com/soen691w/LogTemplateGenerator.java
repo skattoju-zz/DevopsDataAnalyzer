@@ -173,6 +173,9 @@ public class LogTemplateGenerator {
             List<Node> childNodes = expression.getChildNodes();
             for(Node n : childNodes) {
                 if(n instanceof Expression)
+                    // We don't know whats happening in method calls so we ignore.
+                    //if(n instanceof MethodCallExpr)
+                       // continue;
                     template = getLogTemplate((Expression) n, template);
             }
         }
