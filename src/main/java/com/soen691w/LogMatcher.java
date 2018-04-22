@@ -17,6 +17,7 @@ public class LogMatcher {
 
     HashMap<String, ArrayList<String>> templates = new HashMap<>();
     ArrayList<String> matches = new ArrayList<>();
+    ArrayList<String> eidTimeStampMappings = new ArrayList<>();
     HashMap<String, String> eids = new HashMap<>();
     
     int eidSeq = 1;
@@ -30,6 +31,7 @@ public class LogMatcher {
         printClassifiedLog();
         printTemapltesEidMapping();
         printStatistics();
+        printEIdTimeStamps();
     }
 
     private void loadTemplates()
@@ -158,6 +160,27 @@ public class LogMatcher {
 
             Files.createFile(file);
             Files.write(file, matches, StandardOpenOption.APPEND);
+        }
+        catch(Exception ie){
+            ie.printStackTrace();
+        }
+    }
+
+    private void printEIdTimeStamps(){
+        Path file = Paths.get(Main.eidTimestamp);
+        try {
+            if (Files.exists(file)) {
+                Files.delete(file);
+            }
+            Files.createFile(file);
+
+            for (String line: matches) {
+                String eid = line.substring(0,7);
+                String timeStamp = line.substring(9,27);
+                eidTimeStampMappings.add(timeStamp+","+eid);
+            }
+
+            Files.write(file, eidTimeStampMappings, StandardOpenOption.APPEND);
         }
         catch(Exception ie){
             ie.printStackTrace();
