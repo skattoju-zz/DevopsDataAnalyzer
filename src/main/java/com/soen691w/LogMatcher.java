@@ -19,7 +19,7 @@ public class LogMatcher {
     ArrayList<String> matches = new ArrayList<>();
     ArrayList<String> eidTimeStampMappings = new ArrayList<>();
     HashMap<String, String> eids = new HashMap<>();
-    
+
     int eidSeq = 1;
     int unclassified = 0;
     int templateClassification = 0;
@@ -28,9 +28,9 @@ public class LogMatcher {
     public void classifyLogs(){
         loadTemplates();
         processLogs();
-        printClassifiedLog();
+        //printClassifiedLog();
         printTemapltesEidMapping();
-        printStatistics();
+        //printStatistics();
         printEIdTimeStamps();
     }
 
@@ -176,6 +176,11 @@ public class LogMatcher {
 
             for (String line: matches) {
                 String eid = line.substring(0,7);
+                eid = eid.replace("E_", "");
+                eid = eid.replace("O_", "");
+                eid = eid.replace("UNKNOWN", "0");
+                int i = Integer.parseInt(eid);
+                eid = "E"+i;
                 String timeStamp = line.substring(9,27);
                 eidTimeStampMappings.add(timeStamp+","+eid);
             }

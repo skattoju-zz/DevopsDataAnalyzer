@@ -3,6 +3,7 @@ package com.soen691w;
 
 public class Cluster {
 
+    private int clusterNumber;
     private double spike;
     private double bloat;
     private double leak;
@@ -19,22 +20,16 @@ public class Cluster {
     private double size;
 
     public Cluster(int clusterNumber, int clusterSize, double [] memoryDeltas){
+        this.clusterNumber = clusterNumber;
+        this.size = clusterSize;
+        this.memoryDeltas = memoryDeltas;
         this.initAverage();
         this.initStdDev();
     }
 
-
-    private double getVariance() {
-        double temp = 0;
-        for(double a :this.memoryDeltas)
-            temp += (a-this.averageMemoryDelta)*(a-this.averageMemoryDelta);
-        return temp/(size-1);
-    }
-
-    private double initStdDev() {
-        return Math.sqrt(getVariance());
-    }
-
+    /**
+     * Initialize the avg for the cluster.
+     */
     private void initAverage(){
         double average = 0.0;
         for(int i = 0;i < this.memoryDeltas.length;i++){
@@ -44,6 +39,20 @@ public class Cluster {
         this.averageMemoryDelta = average;
     }
 
+    /**
+     * Initilize the standard deviation for the cluster.
+     * @return
+     */
+    private void initStdDev() {
+        this.standardDeviationMemoryDelta = Math.sqrt(getVariance());
+    }
+
+    private double getVariance() {
+        double temp = 0;
+        for(double a :this.memoryDeltas)
+            temp += (a-this.averageMemoryDelta)*(a-this.averageMemoryDelta);
+        return temp/(size);
+    }
 
     public double getSpike() {
         return spike;
@@ -102,6 +111,9 @@ public class Cluster {
         this.memoryDeltas = memoryDeltas;
     }
 
+    public int getClusterNumber(){
+        return this.clusterNumber;
+    }
 
 
 }

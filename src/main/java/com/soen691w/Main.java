@@ -1,4 +1,5 @@
 package com.soen691w;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,10 +11,12 @@ import java.util.stream.Stream;
 public class Main {
 
     public static final String logTemplateFile = "logTemplates.txt";
-    public static final String logFile = "log.txt";
+    public static final String logFile = "bloat_hadoop_logs.txt";
     public static final String classifiedLogsFile = "classifiedLogs.txt";
+    public static final String eidTimestamp = "eidTimestamp.txt";
     public static final String templateEidMappingsFile = "templateEidMappings.txt";
     public static final String statsFile = "stats.txt";
+    public static final String memoryDeltaFile = "baseline_cluster_memory_deltas.csv";
 
 
     public static void main(String[] args) {
@@ -32,10 +35,10 @@ public class Main {
                 File FilesToProcess = new File(arg);
                 if (FilesToProcess.isFile()) {
                     System.out.println("Processing file "+arg);
-                    AnalyzeFiles(parseTextFile(FilesToProcess));
+                    startProcess(parseTextFile(FilesToProcess));
                 } else if (FilesToProcess.isDirectory()) {
                     System.out.println("Processing directory "+arg);
-                    AnalyzeFiles(getJavaFilesFromDirectory(FilesToProcess));
+                    startProcess(getJavaFilesFromDirectory(FilesToProcess));
                 } else {
                     System.out.println("Invalid Argument "+arg);
                     printUsage();
@@ -46,8 +49,20 @@ public class Main {
         }
     }
 
-    private static void AnalyzeFiles(ArrayList<String> javaFiles){
+    private static void startProcess(ArrayList<String> javaFiles){
+        generateTemplates(javaFiles);
+        performLogAbstraction();
+        generateClusters();
+        analyzeClusters();
 
+    }
+
+    /**
+     * Generates the templates from the source code. Needs path to the folder containing the source code.
+     * The templates are generates by reading the .java files. No other types of files are processed.
+     * The result of this step is "logTemplates.txt"
+     */
+    private static void generateTemplates(ArrayList<String> javaFiles){
         for (String javaFile : javaFiles) {
             try{
                 LogTemplateGenerator ltg = new LogTemplateGenerator();
@@ -57,10 +72,37 @@ public class Main {
             }
         }
         LogTemplateGenerator.printTemplates();
+    }
 
+    /*
+    * Classifies/abstracts the logs based on the log templates created before.
+    * The result of this step is "eidTimeStamp.txt" which is the result of matching template sto log lines.
+    *           and "templateEidMappings.txt" which is the mapping of templates to eid, this is different because
+    *           we are providing eids to only the templates that were matches.
+    */
+    private static void performLogAbstraction(){
         LogMatcher lm = new LogMatcher();
         lm.classifyLogs();
     }
+
+    /**
+     * This part is done in python. It generates cluster using the "templateEidMappings.txt" file.
+     * The result of this step is "baseline_cluster_memory_deltas.csv".
+     */
+    private static void generateClusters(){
+        // Call python method.
+    }
+
+    /**
+     * The method takes as input "baseline_cluster_memory_deltas.csv" to score the clusters in compute the most
+     * significatnt event/s.
+     */
+    private static void analyzeClusters(){
+        Analyzer analyzer = new Analyzer();
+        analyzer.processMemoryDeltas();
+        analyzer.printOutlyingClusters();
+    }
+
 
     /**
      * returns an array of java code names we need to analyze.
