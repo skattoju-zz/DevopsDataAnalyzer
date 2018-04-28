@@ -5,9 +5,9 @@ import time
 import datetime
 import re
 
-abstracted_log_file = 'manually_abstracted_logs.csv'
-perf_counter_file = 'sample_perf_counters.csv'
-time_slice_length = 5
+abstracted_log_file = 'baseline_abstracted_logs.txt'
+perf_counter_file = 'baseline_perf_counters.csv'
+time_slice_length = 2
 time_stamp_format = '%H:%M:%S'
 time_stamp_regex = '2[0-3]|[01][0-9]:[0-5][0-9]:[0-5][0-9]'
 with open(abstracted_log_file) as abstractedLogFile:
@@ -35,7 +35,7 @@ with open(abstracted_log_file) as abstractedLogFile:
 				events = {}
 
 #add memory deltas
-perf_counter_file = 'sample_perf_counters.csv'
+perf_counter_file = 'baseline_perf_counters.csv'
 time_stamp_format = '%H:%M:%S'
 time_stamp_regex = '2[0-3]|[01][0-9]:[0-5][0-9]:[0-5][0-9]'
 with open(perf_counter_file) as perfCounterFile:
@@ -70,7 +70,7 @@ with open(perf_counter_file) as perfCounterFile:
 					#No more vectors left to add perf counters
 					break
 #Save time slice vectors
-with open('time_slice_vectors.csv','wb') as vector_file:
+with open('baseline_time_slice_vectors.csv','wb') as vector_file:
 	writer = csv.writer(vector_file)
 	for row in vectors:
 		writer.writerow(row)
