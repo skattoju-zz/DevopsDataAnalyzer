@@ -5,8 +5,8 @@ import time
 import datetime
 import re
 
-abstracted_log_file = 'baseline_abstracted_logs.txt'
-perf_counter_file = 'baseline_perf_counters.csv'
+abstracted_log_file = 'bloat_abstracted_logs10000x.txt'
+perf_counter_file = 'bloat_perf_counters10000x.csv'
 time_slice_length = 2
 time_stamp_format = '%H:%M:%S'
 time_stamp_regex = '2[0-3]|[01][0-9]:[0-5][0-9]:[0-5][0-9]'
@@ -29,13 +29,16 @@ with open(abstracted_log_file) as abstractedLogFile:
 				events[logLine[1]] = events.setdefault(logLine[1],0) + 1
 			#If currentTimeStamp is not in the current timeSlice, move to next timeSlice
 			else:
+				# add empty event incase there is no log in the timeslice
+				if not bool(events):
+					events['E129'] = 1
 				vectors.append([timeSliceEnd,events])
 				timeSliceStart = timeSliceEnd
 				timeSliceEnd = timeSliceStart + datetime.timedelta(seconds=time_slice_length)
 				events = {}
 
 #add memory deltas
-perf_counter_file = 'baseline_perf_counters.csv'
+perf_counter_file = 'bloat_perf_counters10000x.csv'
 time_stamp_format = '%H:%M:%S'
 time_stamp_regex = '2[0-3]|[01][0-9]:[0-5][0-9]:[0-5][0-9]'
 with open(perf_counter_file) as perfCounterFile:
@@ -70,7 +73,7 @@ with open(perf_counter_file) as perfCounterFile:
 					#No more vectors left to add perf counters
 					break
 #Save time slice vectors
-with open('baseline_time_slice_vectors.csv','wb') as vector_file:
+with open('bloat_time_slice_vectors10000x.csv','wb') as vector_file:
 	writer = csv.writer(vector_file)
 	for row in vectors:
 		writer.writerow(row)

@@ -1,41 +1,44 @@
 E_00048 TaskAttemptListenerImpl.java_JVM with ID: ~~ given task:
-E_00071 MRAppMaster.java_Notify JHEH isAMLastRetry:
+E_00076 MRAppMaster.java_Notify JHEH isAMLastRetry:
 E_00022 ContainerLauncherImpl.java_The thread pool initial size is
-E_00066 TaskImpl.java_given a go for committing the task output.
 E_00052 JobImpl.java_Num completed Tasks:
+E_00064 RMContainerAllocator.java_Assigning container ~~ to fast fail map
+E_00071 RMContainerRequestor.java_Update the blacklist for ~~: blacklistAdditions=~~ blacklistRemovals=
 E_00031 RMContainerAllocator.java_Got allocated containers
-E_00057 RMContainerAllocator.java_completedMapPercent ~~ totalResourceLimit:~~ finalMapResourceLimit:~~ finalReduceResourceLimit:~~ netScheduledMapResource:~~ netScheduledReduceResource:
 E_00025 TaskAttemptImpl.java_TaskAttempt Transitioned from ~~ to
 E_00042 TaskAttemptImpl.java_TaskAttempt: [~~] using containerId: [~~ on NM: [~~]
 E_00049 TaskAttemptListenerImpl.java_Progress of TaskAttempt ~~ is :
+E_00063 RMContainerAllocator.java_Added ~~ to list of failed maps
 E_00041 ContainerLauncherImpl.java_Shuffle port returned by ContainerManager for ~~ :
 O_00017 RMContainerRequestor.java
 E_00044 RMContainerAllocator.java_Cannot assign container ~~ for a map as either ~~ container memory less than required ~~ or no pending map tasks - maps.isEmpty=
-O_00076 JobHistoryEventHandler.java
+O_00081 JobHistoryEventHandler.java
 E_00004 MRAppMaster.java_Using mapred newApiCommitter.
-E_00079 MRAppMaster.java_Deleting staging directory ~~
+E_00084 MRAppMaster.java_Deleting staging directory ~~
 E_00037 TaskAttemptImpl.java_Putting shuffle token in serviceData
+E_00073 JobImpl.java_Job failed as tasks failed. ~~failedMaps:~~ failedReduces:~~
 E_00026 JobHistoryEventHandler.java_Event Writer setup for JobId: ~~, File:
-E_00077 JobHistoryEventHandler.java_Moved tmp to done: ~~ to
-E_00072 JobHistoryEventHandler.java_JobHistoryEventHandler notified that forceJobCompletion is
+E_00082 JobHistoryEventHandler.java_Moved tmp to done: ~~ to
+E_00077 JobHistoryEventHandler.java_JobHistoryEventHandler notified that forceJobCompletion is
 E_00002 MRAppMaster.java_Executing with tokens:
+E_00072 RMContainerRequestor.java_Ignore blacklisting set to true. Known: ~~, Blacklisted: ~~, ~~%
 E_00008 JobHistoryEventHandler.java_Emitting job history data to the timeline server is not ~~enabled
 E_00015 MRClientService.java_Instantiated MRClientService at
 E_00023 CommitterEventHandler.java_Processing the event
-E_00080 TaskHeartbeatHandler.java_TaskHeartbeatHandler thread interrupted
+E_00085 TaskHeartbeatHandler.java_TaskHeartbeatHandler thread interrupted
 E_00034 TaskAttemptImpl.java_The job-conf file on the remote FS is
+E_00074 RMContainerAllocator.java_Processing the event
 E_00046 RMContainerAllocator.java_Container complete event for unknown container
 O_00003 MRAppMaster.java
-E_00067 TaskAttemptListenerImpl.java_Commit go/no-go request from
+E_00062 RMContainerRequestor.java_failures on node
 E_00029 RMContainerAllocator.java_Recalculating schedule, headroom=
-E_00065 TaskAttemptListenerImpl.java_Commit-pending state update from
 E_00013 JobImpl.java_Job Transitioned from ~~ to
 O_00050 TaskAttemptListenerImpl.java
 E_00047 TaskAttemptListenerImpl.java_JVM with ID : ~~ asked for a task
 E_00039 ContainerLauncherImpl.java_Processing the event
-E_00070 MRAppMaster.java_Notify RMCommunicator isAMLastRetry:
+E_00075 MRAppMaster.java_Notify RMCommunicator isAMLastRetry:
 E_00045 RMContainerAllocator.java_Received completed container
-E_00064 TaskAttemptListenerImpl.java_MapCompletionEvents request from ~~. startIndex ~~ maxEvents
+E_00069 TaskAttemptListenerImpl.java_MapCompletionEvents request from ~~. startIndex ~~ maxEvents
 E_00006 FileOutputCommitter.java_FileOutputCommitter skip cleanup _temporary folders under ~~output directory:~~, ignore cleanup failures:
 E_00027 RMContainerAllocator.java_PendingReds:~~ ScheduledMaps:~~ ScheduledReds:~~ AssignedMaps:~~ AssignedReds:~~ CompletedMaps:~~ CompletedReds:~~ ContAlloc:~~ ContRel:~~ HostLocal:~~ RackLocal:
 E_00009 JobImpl.java_Adding job token for ~~ to jobTokenSecretManager
@@ -43,38 +46,40 @@ E_00040 ContainerLauncherImpl.java_ Launching
 E_00030 RMContainerAllocator.java_Reduce slow start threshold not met. ~~completedMapsForReduceSlowstart
 E_00007 JobHistoryUtils.java_Default file system [~~]
 E_00036 TaskAttemptImpl.java_Size of containertokens_dob is
+E_00054 RMContainerAllocator.java_All maps assigned. ~~Ramping up all remaining reduces:
 E_00011 JobImpl.java_Input size for job ~~ = ~~. Number of splits =
 E_00014 MRAppMaster.java_MRAppMaster launching normal, non-uberized, multi-container ~~job ~~.
-E_00056 RMContainerAllocator.java_Reduce slow start threshold reached. Scheduling reduces.
+E_00053 RMContainerAllocator.java_Reduce slow start threshold reached. Scheduling reduces.
 E_00024 TaskImpl.java_Task Transitioned from ~~ to
-E_00063 RMContainerAllocator.java_Assigned to reduce
-E_00073 MRAppMaster.java_Calling stop for all the services
+E_00059 RMContainerAllocator.java_Assigned to reduce
+E_00078 MRAppMaster.java_Calling stop for all the services
 E_00012 JobImpl.java_Number of reduces for job ~~ =
-E_00062 FileOutputCommitter.java_Could not delete
+E_00068 FileOutputCommitter.java_Could not delete
 E_00033 TaskAttemptImpl.java_The job-jar file on the remote FS is
 O_00010 JobImpl.java
 E_00005 FileOutputCommitter.java_File Output Committer Algorithm version is
 E_00021 ContainerLauncherImpl.java_Upper limit on the thread pool size is
 E_00051 TaskImpl.java_Task succeeded with attempt
 E_00032 RMContainerAllocator.java_Assigned container ~~ to
-E_00059 TaskAttemptImpl.java_Diagnostics report from ~~:
-E_00053 DefaultSpeculator.java_DefaultSpeculator.addSpeculativeAttempt -- we are speculating
-E_00068 TaskImpl.java_Result of canCommit for ~~:
-E_00078 JobHistoryEventHandler.java_Stopped JobHistoryEventHandler. super.stop()
-E_00054 TaskImpl.java_Scheduling a redundant attempt for task
+E_00058 TaskAttemptImpl.java_Diagnostics report from ~~:
+E_00060 TaskAttemptListenerImpl.java_Task: ~~ - exited :
+E_00055 DefaultSpeculator.java_DefaultSpeculator.addSpeculativeAttempt -- we are speculating
+E_00083 JobHistoryEventHandler.java_Stopped JobHistoryEventHandler. super.stop()
+E_00056 TaskImpl.java_Scheduling a redundant attempt for task
+E_00065 RMContainerAllocator.java_Assigned from earlierFailedMaps
 E_00016 DefaultSpeculator.java_ JOB_CREATE 
 E_00035 TaskAttemptImpl.java_Adding #~~ tokens and #~~ secret keys for NM use for launching container
-E_00074 JobHistoryEventHandler.java_Stopping JobHistoryEventHandler. ~~Size of the outstanding queue size is
+E_00079 JobHistoryEventHandler.java_Stopping JobHistoryEventHandler. ~~Size of the outstanding queue size is
 E_00019 RMContainerRequestor.java_blacklistDisablePercent is
-E_00069 JobImpl.java_Calling handler for JobFinishedEvent
 E_00001 MRAppMaster.java_Created MRAppMaster for application
-E_00058 RMContainerAllocator.java_Ramping up
-E_00061 ContainerLauncherImpl.java_ KILLING 
+E_00067 ContainerLauncherImpl.java_ KILLING 
 E_00028 RMContainerRequestor.java_getResources() for ~~:~~ ask=~~ release= ~~ newContainers=~~ finishedContainers=~~ resourcelimit=~~ knownNMs=
 O_00038 JobConf.java
+E_00070 RMContainerRequestor.java_Blacklisted host
 E_00043 DefaultSpeculator.java_ ATTEMPT_START 
-E_00055 DefaultSpeculator.java_We launched ~~ speculations.  Sleeping ~~ milliseconds.
+E_00057 DefaultSpeculator.java_We launched ~~ speculations.  Sleeping ~~ milliseconds.
 O_00020 RMContainerAllocator.java
 E_00018 RMContainerRequestor.java_maxTaskFailuresPerNode is
-E_00075 JobHistoryEventHandler.java_Copying ~~ to
-E_00060 TaskImpl.java_Issuing kill to other attempt
+E_00061 TaskAttemptListenerImpl.java_Diagnostics report from ~~:
+E_00080 JobHistoryEventHandler.java_Copying ~~ to
+E_00066 TaskImpl.java_Issuing kill to other attempt

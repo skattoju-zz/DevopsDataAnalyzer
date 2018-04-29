@@ -1,22 +1,25 @@
 package com.soen691w;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
 
     public static final String logTemplateFile = "logTemplates.txt";
-    public static final String logFile = "bloat_hadoop_logs.txt";
+    public static final String logFile = "bloat_hadoop_logs10000x.txt";
     public static final String classifiedLogsFile = "classifiedLogs.txt";
-    public static final String eidTimestamp = "baseline_abstracted_logs.txt";
+    public static final String eidTimestamp = "bloat_abstracted_logs10000x.txt";
     public static final String templateEidMappingsFile = "templateEidMappings.txt";
     public static final String statsFile = "stats.txt";
-    public static final String memoryDeltaFile = "clustering/baseline_cluster_memory_deltas.csv";
+    public static final String memoryDeltaFile = "bloat_cluster_memory_deltas10000x.csv";
 
 
     public static void main(String[] args) {
@@ -93,8 +96,16 @@ public class Main {
         // Call python method.
         System.out.println("Calling clustering scripts ..");
         try {
-            Runtime.getRuntime().exec("python clustering/dataprep.py").waitFor();
-            Runtime.getRuntime().exec("python clustering/clustering.py").waitFor();
+            Process p1 = Runtime.getRuntime().exec("python clustering/dataprep.py");
+            System.out.println(new BufferedReader(new InputStreamReader(p1.getErrorStream()))
+                    .lines().collect(Collectors.joining("\n")));
+            p1.waitFor();
+            System.out.println("Time slice vector creation completed with exit code "+p1.exitValue());
+            Process p2 = Runtime.getRuntime().exec("python clustering/clustering.py");
+            System.out.println(new BufferedReader(new InputStreamReader(p2.getErrorStream()))
+                    .lines().collect(Collectors.joining("\n")));
+            p2.waitFor();
+            System.out.println("Clustering completed with exit code "+p2.exitValue());
         } catch( IOException e) {
             System.out.println("error executing python script "+e.getMessage());
         } catch ( InterruptedException f) {

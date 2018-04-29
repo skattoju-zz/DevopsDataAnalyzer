@@ -181,7 +181,7 @@ public class LogMatcher {
                 eid = eid.replace("UNKNOWN", "0");
                 int i = Integer.parseInt(eid);
                 eid = "E"+i;
-                String timeStamp = line.substring(9,27);
+                String timeStamp = line.substring(19,27);
                 eidTimeStampMappings.add(timeStamp+","+eid);
             }
 

@@ -14,8 +14,8 @@ event_vector_list = []
 timeStampList = []
 eventDictList = []
 memoryDeltas = []
-time_slices = 'baseline_time_slice_vectors_pearson.csv'
-cluster_memory_deltas = 'baseline_cluster_memory_deltas.csv'
+time_slices = 'bloat_time_slice_vectors10000x.csv'
+cluster_memory_deltas = 'bloat_cluster_memory_deltas10000x.csv'
 with open(time_slices) as timeSlices:
 	timeSliceReader = csv.reader(timeSlices)
 	for timeSlice in timeSliceReader:
@@ -29,7 +29,24 @@ with open(time_slices) as timeSlices:
 		event_vector_list.append(event_vector)
 		event_vector = np.zeros(total_events)
 event_array = np.asarray(event_vector_list)
-Z = linkage(event_array,'average','cosine', True)
+
+n = len(event_array)
+def mydist(p1, p2):
+	pearson = pearsonr(p1,p2)
+	modified_pearson = ((n*np.sum(p1*p2))-(np.sum(p1)*np.sum(p2)))/((np.sqrt(n*np.sum(np.square(p1))-(np.square(np.sum(p1))*(np.sum(np.square(p2))-np.square(np.sum(p2)))))))
+	#print(modified_pearson)
+	#print(pearson)
+	metric = pearson[0]
+	#metric = modified_pearson
+	if metric > 0:
+		#result = 9.32798134406 - metric
+		result = 1 - metric
+	else:
+		result = abs(metric)
+	return result
+
+
+Z = linkage(event_array,'average',mydist, True)
 
 def fancy_dendrogram(*args, **kwargs):
     max_d = kwargs.pop('max_d', None)
@@ -64,18 +81,21 @@ fancy_dendrogram(
     leaf_font_size=12.,
     show_contracted=True,
     annotate_above=2,
-    max_d=0.5,
+    max_d=0.04,
 )
 
 # Plot dendrogram
-#plt.show()
+plt.show()
 #print(Z)
 
 # Print CH Scores
 #for d in range(10):
-#	print("CH score "+str(calinski_harabaz_score(event_array,fcluster(Z,d/10,'distance'))))
+	# Sometimes there are too many clusters ?
+	# print("no of events "+str(len(event_array)))
+	# print("no of labels "+str(len(fcluster(Z,d/10,'distance'))))
+#	print("CH score "+str(calinski_harabaz_score(event_array,fcluster(Z,d/100,'distance'))))
 
-clusterList = fcluster(Z,0.5,'distance')
+clusterList = fcluster(Z,0.04,'distance')
 clusterMemoryDeltas = {}
 clusterEvents = {}
 for i in range(len(clusterList)):
