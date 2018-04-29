@@ -13,10 +13,10 @@ public class Main {
     public static final String logTemplateFile = "logTemplates.txt";
     public static final String logFile = "bloat_hadoop_logs.txt";
     public static final String classifiedLogsFile = "classifiedLogs.txt";
-    public static final String eidTimestamp = "eidTimestamp.txt";
+    public static final String eidTimestamp = "baseline_abstracted_logs.txt";
     public static final String templateEidMappingsFile = "templateEidMappings.txt";
     public static final String statsFile = "stats.txt";
-    public static final String memoryDeltaFile = "baseline_cluster_memory_deltas.csv";
+    public static final String memoryDeltaFile = "clustering/baseline_cluster_memory_deltas.csv";
 
 
     public static void main(String[] args) {
@@ -91,6 +91,16 @@ public class Main {
      */
     private static void generateClusters(){
         // Call python method.
+        System.out.println("Calling clustering scripts ..");
+        try {
+            Runtime.getRuntime().exec("python clustering/dataprep.py").waitFor();
+            Runtime.getRuntime().exec("python clustering/clustering.py").waitFor();
+        } catch( IOException e) {
+            System.out.println("error executing python script "+e.getMessage());
+        } catch ( InterruptedException f) {
+            System.out.println("interrupted when waiting for python script "+f.getMessage());
+        }
+
     }
 
     /**

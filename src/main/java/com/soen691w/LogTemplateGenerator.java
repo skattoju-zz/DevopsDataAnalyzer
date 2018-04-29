@@ -82,7 +82,7 @@ public class LogTemplateGenerator {
                 }
             }
             catch (Exception e) {
-                System.out.println("Error when parsing assignment expressions "+e.getMessage());
+                //System.out.println("Error when parsing assignment expressions "+e.getMessage());
             }
         }
     }
@@ -108,7 +108,7 @@ public class LogTemplateGenerator {
                     }
                 }
             } catch (Exception e) {
-                    System.out.println("Error when parsing method expression "+e.getMessage());
+                    //System.out.println("Error when parsing method expression "+e.getMessage());
             }
         }
     }

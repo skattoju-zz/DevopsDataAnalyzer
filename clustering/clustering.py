@@ -66,10 +66,14 @@ fancy_dendrogram(
     annotate_above=2,
     max_d=0.5,
 )
-plt.show()
+
+# Plot dendrogram
+#plt.show()
 #print(Z)
-for d in range(10):
-	print("CH score "+str(calinski_harabaz_score(event_array,fcluster(Z,d/10,'distance'))))
+
+# Print CH Scores
+#for d in range(10):
+#	print("CH score "+str(calinski_harabaz_score(event_array,fcluster(Z,d/10,'distance'))))
 
 clusterList = fcluster(Z,0.5,'distance')
 clusterMemoryDeltas = {}
@@ -83,5 +87,7 @@ for i in range(len(clusterList)):
 with open(cluster_memory_deltas,'wb') as clusteringOutput:
 	clusteringOutputWriter = csv.writer(clusteringOutput)
 	for cluster in clusterMemoryDeltas:
-		clusteringOutputWriter.writerow([cluster,clusterEvents[cluster],clusterMemoryDeltas[cluster]])
-		#clusteringOutputWriter.writerow([cluster,str(clusterMemoryDeltas[cluster]).strip('[')])
+		# write clusters for manual inspection
+		# clusteringOutputWriter.writerow([cluster,clusterEvents[cluster],clusterMemoryDeltas[cluster]])
+		# write clusters for analysis program
+		clusteringOutputWriter.writerow([cluster,clusterMemoryDeltas[cluster]])
